@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "imgSrc": "images/iconHeadset.svg",
+        "title": "Best Services",
+        "description": "Nullam senectus porttitor in eget. Eget rutrum leo interdum."
+    },
+   {
+        "id": 2,
+        "imgSrc": "images/iconHeadset.svg",
+        "title": "Best Services",
+        "description": "Cursus semper tellus volutpat aliquet lacus. "
+    },
+    {
+        "id": 3,
+        "imgSrc": "images/iconHeadset.svg",
+        "title": "Best Designs",
+        "description": "Ultricies at ipsum nunc, tristique nam lectus."
+    }
+]
