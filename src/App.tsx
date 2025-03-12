@@ -1,6 +1,5 @@
 
 import './App.scss'
-import DragDropList from './assets/dragAndDrop';
 import EditPanel from './assets/EditPanel'
 import Header from './assets/Header'
 import SectionHome from './assets/SectionHome';
@@ -19,7 +18,6 @@ export default function App() {
     <TableSection />
     <SectionReputation />
     <Services />
-    {/* <DragDropList /> */}
   </>
 }
 

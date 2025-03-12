@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ServicesCard from "./ServicesCard";
 
 interface IServices {
@@ -40,8 +39,6 @@ export default function Services() {
             title: 'Best Services',
         }
     ]
-
-    const [activeId, setActiveId] = useState(null);
 
     return <>
         <section className="services">

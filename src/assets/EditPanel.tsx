@@ -66,15 +66,16 @@ function handleMouseDown(e: MouseEvent,) {
     const target = e.target as HTMLElement;
     const rect = target.getBoundingClientRect();
 
-    if (target.classList.contains("edit-panel")) {
+    if (target.classList.contains("edit-panel") || target.classList.contains("card")) {
         isMouseDown = true;
         targetElement = target;
 
-
         offsetX = e.clientX - rect.left;
         offsetY = e.clientY - rect.top;
+        console.log(targetElement);
 
-        e.preventDefault(); // Запобігає небажаному вибору тексту під час перетягування
+
+        e.preventDefault();
     }
 }
 
@@ -88,7 +89,7 @@ document.addEventListener("mousemove", (e: MouseEvent) => {
         targetElement.style.left = `${x}px`;
         targetElement.style.top = `${y}px`;
 
-        console.log("Переміщення:", x, y);
+
     }
 });
 
@@ -99,16 +100,3 @@ document.addEventListener("mouseup", () => {
 
 
 
-// document.addEventListener("mousedown", handleEditPanel);
-
-// function handleEditPanel(e: MouseEvent) {
-//     const target = e.target as HTMLElement;
-//     let x = e.clientX;
-//     let y = e.clientY;
-//     if (target.classList.contains('edit-panel')) {
-//         x -= target.offsetLeft;
-//         y -= target.offsetTop;
-//         document.documentElement.style.setProperty('--topEditPanel', `${y}px`);
-//         document.documentElement.style.setProperty('--leftEditPanel', `${x}px`);
-//     }
-// }
